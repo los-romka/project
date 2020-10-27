@@ -9,9 +9,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class ApiController extends AbstractController
 {
     /**
-     * @Route("/api/{userId}/list")
+     * @Route("/")
      */
-    public function list(int $userId)
+    public function list()
     {
         return new JsonResponse(
             [
