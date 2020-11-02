@@ -15,12 +15,15 @@ class ApiController extends AbstractController
     {
         return new JsonResponse(
             [
-                random_int(0, 100),
-                random_int(0, 100),
-                random_int(0, 100),
-                random_int(0, 100),
-                random_int(0, 100),
-                random_int(0, 100),
+                'env' => $_SERVER['APP_ENV'],
+                'list' => [
+                    random_int(0, 100),
+                    random_int(0, 100),
+                    random_int(0, 100),
+                    random_int(0, 100),
+                    random_int(0, 100),
+                    random_int(0, 100),
+                ]
             ]
         );
     }
