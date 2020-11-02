@@ -43,4 +43,12 @@ class ApiController extends AbstractController
 
         return new JsonResponse($data);
     }
+
+    /**
+     * @Route("/test")
+     */
+    public function test()
+    {
+        return new JsonResponse('Hello world');
+    }
 }
